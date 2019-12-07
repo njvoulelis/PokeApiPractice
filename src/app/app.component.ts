@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PokeService } from './poke.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'public';
+  constructor(private pokeService: PokeService) {}
+  // getPokemon() {
+  //   this.pokeService.getPokemon().subscribe(console.log);
+  // }
 }
